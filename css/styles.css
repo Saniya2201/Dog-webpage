@@ -15,7 +15,7 @@ h1 {
 }
 
 .container-fluid {
-    padding: 3% 15%;
+    padding: 3% 15% 7%;
 }
 
 .navbar {
@@ -41,12 +41,15 @@ h1 {
 }
 
 .image {
-    width: 60%;
+    width: 30%;
     transform: rotate(25deg);
+    position: absolute;
 }
 
 #features {
     padding: 7% 15%;
+    position: relative;
+    background-color: white;
 }
 
 #features h3 {
@@ -106,4 +109,67 @@ h2 {
 
 .carousel-item {
     padding: 7% 15%;
+}
+
+#pricing {
+    padding: 20px;
+}
+
+.card-wrapper {
+    display: flex;
+    padding: 3% 2%;
+}
+
+.card {
+    flex: 0 0 100%
+}
+
+#pricing {
+    padding: 100px;
+    text-align: center;
+}
+
+@media (max-width: 1028px) {
+    .image {
+        position: static;
+        width: 40%;
+        transform: rotate(0);
+    }
+
+    #title {
+        text-align: center;
+    }
+}
+
+#cta {
+    background-color: #ff4c68;
+    text-align: center;
+}
+
+#cta h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    color: white;
+    padding: 7% 15% 5%;
+    line-height: 1.5;
+    font-size: 3.5rem;
+}
+
+#cta button {
+    margin-top: 0%;
+    margin-bottom: 8%;
+}
+
+#footer {
+    background-color: white;
+    text-align: center;
+    padding: 3rem;
+}
+
+#footer i {
+    margin: 20px 10px;
+}
+
+#footer p {
+    color: #8f8f8f;
 }
